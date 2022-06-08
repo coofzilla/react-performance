@@ -33,11 +33,11 @@ function App() {
         />
         {' show globe'}
       </label>
-      <div style={{width: 400, height: 400}}>
-        <React.Suspense fallback={<div>loading globe...</div>}>
+      <React.Suspense fallback={<div>loading globe...</div>}>
+        <div style={{width: 400, height: 400}}>
           {showGlobe ? <Globe /> : null}
-        </React.Suspense>
-      </div>
+        </div>
+      </React.Suspense>
     </div>
   )
 }
