@@ -1,6 +1,7 @@
 import {useCombobox as useDownshiftCombobox} from 'downshift'
 
 function useCombobox(options = {}) {
+  //   options.message('IM CONSOLED FROM THE MESSAGE ARGUMENT')
   const {itemToString = item => item || ''} = options
   return useDownshiftCombobox({
     stateReducer(state, {type, changes}) {

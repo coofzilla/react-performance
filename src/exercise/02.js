@@ -84,6 +84,7 @@ function App() {
           : 'Selection Cleared',
       ),
     itemToString: item => (item ? item.name : ''),
+    message: () => console.log('HELLO MESSAGE'),
   })
 
   return (
